@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onay Travel </title>
+   
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<form  method="post" action="/tours.html">
+     <div class="elem-group">
+       <label for="name">Name</label>
+       <input type="text" id="name" name="visitor_name" placeholder="Name Surname" pattern=[A-Z\sa-z]{3,20} required>
+     </div>
+     <div class="elem-group">
+       <label for="email">E-mail</label>
+       <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+     </div>
+     <div class="elem-group">
+       <label for="phone">Phone number</label>
+       <input type="tel" id="phone" name="visitor_phone" placeholder="8(777)-777-77-77" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+     </div>
+
+     <div class="elem-group inlined">
+       <label for="adult">Adults</label>
+       <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+     </div>
+     <div class="elem-group inlined">
+       <label for="child">Children</label>
+       <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+     </div>
+     <div class="elem-group inlined">
+       <label for="checkin-date">Check-in Date</label>
+       <input type="date" id="checkin-date" name="checkin" required>
+     </div>
+     <div class="elem-group inlined">
+       <label for="checkout-date">Check-out Date</label>
+       <input type="date" id="checkout-date" name="checkout" required>
+     </div>
+  
+     <div class="elem-group">
+       <label for="message">Additionaly</label>
+       <textarea id="message" name="visitor_message" placeholder="" required></textarea>
+     </div>
+     
+     <button >Book Tour</button>
+      <button >Cancel</button>
+    
+     
+   </form>
+   <script src="js/booking.js"></script>
+</html>

@@ -1,0 +1,148 @@
+*{
+     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn {
+     display: flex; 
+     background: #790000; 
+     color: #fff;
+     padding: 1rem 1.5rem; 
+     text-decoration: none;
+     border-radius: 3px; 
+}
+:root{
+     --bg: #ffffff;
+     --title: #0d0505;
+     --para-text: rgba(0,0,0,0.67);
+     --width: 20em;
+   }
+   body{
+     background: var(--bg);
+     display: grid;
+     place-items: center;
+   }
+   
+   h1, h2, h3, h4, h5, h6{
+     color: var(--title);
+     text-transform: capitalize;
+     font-family: var(--title-font);
+   }
+   
+   section,
+   aside,
+   article,
+   div,
+   img{
+     box-sizing: border-box;
+   }
+   section img{
+     width: 100%;
+   }
+   section{
+     width: 800px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 35px;
+   }
+   section h3{
+     font-size: calc(var(--width)/10);
+   }
+   section p{
+     font-family: var(--text-font);
+     color: var(--para-text);
+     font-size: calc(var(--width)/20);
+   }
+   .date{
+     font-size: calc(var(--width)/25);
+   }
+   h1{
+     color: #fff;
+   }
+   
+   section a{
+     text-decoration: none;
+     color: var(--bg);
+     font-family: var(--title-font);
+     font-weight: 700;
+     font-size: calc(var(--width)/23);
+   }
+   
+   .container{
+       margin-top:40px;
+       margin-bottom:40px;
+   }
+
+   img {
+       width: 100%;
+   }
+
+   .card-title {
+       justify-content: space-between;
+       margin-top: 25px;
+   }
+
+   .register {
+       font-size: 10px;
+       position: relative;
+       bottom: 5px;
+   }
+
+   .cvc {
+       width: 2.5em;
+       position: absolute;
+   }
+
+   input {
+       border: none;
+       padding-left: 4px;
+       background-color: #f7f1f1;
+       font-size: 15px;
+   }
+
+   .card-body {
+       background-color: #f7f1f1;
+   }
+
+   .footer {
+       background-color: #00BCD4;
+       color: white;
+   }
+
+   .footer:hover {
+       cursor: pointer;
+       background-color: #0097A7;
+   }
+
+   .numbr {
+       border-bottom: 1px solid #c1bcbc;
+       padding-bottom: 8px;
+   }
+
+   .line2 {
+       border-bottom: 1px solid #c1bcbc;
+       padding-bottom: 8px;
+       padding-left: 0px;
+   }
+
+   input.focus,
+   input:focus {
+       outline: 0;
+       box-shadow: none !important;
+   }
+
+   .numbr.numbr.hover,
+   .numbr:hover {
+       border-bottom: 1px solid aqua;
+   }
+
+   .line2.hover,
+   .line2:hover {
+       border-bottom: 1px solid aqua;
+   }
+
+   .fa-lock {
+       margin-right: 10px;
+   }
+
+   .order {
+       margin-top: 10px;
+   }
